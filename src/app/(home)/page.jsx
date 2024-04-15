@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import homebg2 from '@/public/home/homebg2.png'
+import homebg2 from '@/public/home/Homebg2.png'
 
 import Carousel from './components/Carousel'
 import SemiCarousel from './components/SemiCarousel'
@@ -14,7 +14,7 @@ import exploreLine from '@/public/home/ExploreLine.png'
 
 import masterplan from '@/public/home/MasterPlan.png'
 
-import video from '@/public/home/video.png'
+// import video from '@/public/home/video.png'
 
 import callIcon from '@/public/home/contact/call_icon.png'
 import email from '@/public/home/contact/email_icon.png'

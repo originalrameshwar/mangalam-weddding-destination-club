@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 import mail from '@/public/header/Gmail_icon.png'
-import call from '@/public/header/Call_icon.png'
+import call from '@/public/header/call_icon.png'
 import facebook from '@/public/header/Facebook_icon.png'
 import instagram from '@/public/header/Instagram_icon.png'
 import youtube from '@/public/header/YouTube_icon.png'
