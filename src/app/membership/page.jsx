@@ -1,11 +1,14 @@
+'use client'
+import { motion } from 'framer-motion'
+
 import Developing from '@/components/Develop'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <motion.div>
       <Developing />
-    </div>
+    </motion.div>
   )
 }
 

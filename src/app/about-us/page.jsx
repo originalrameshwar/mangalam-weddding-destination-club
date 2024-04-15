@@ -1,4 +1,6 @@
-import Developing from '@/components/Develop'
+'use client'
+import { motion } from 'framer-motion'
+
 import Image from 'next/image'
 import React from 'react'
 import gadiy from '@/public/about/shirish_gadiya.png'
@@ -24,22 +26,36 @@ const page = () => {
   //   </main>
   // )
   return (
-    <main className='bg-white'>
+    <motion.main
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ type: 'spring', duration: 0.5 }}
+      className='bg-white'>
 
       {/* Introduction Section stats here >> */}
       <section className='flex items-center w-full justify-around bg-white py-[67px] '>
-        <div className=' flex flex-col items-center justify-center' >
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className=' flex flex-col items-center justify-center' >
           <Image className='mb-[25px]' src={gadiy} width={'auto'} height={'auto'} alt="Shirish Gadiya" />
           <h2 className='mb-1 font-roboto font-medium text-[28px] leading-[32.81px] text-center text-[#FF0A0A]'>Shirish Gadiya</h2>
           <h3 className='font-roboto text-center text-black'>Shirish Gadiya</h3>
-        </div>
+        </motion.div>
 
-        <div className=' w-[586px] text-justify'>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className=' w-[586px] text-justify'>
           <h1 className='mb-[36px] text-[#FF0000] font-roboto font-medium text[20px] '>Country&apos;s First Wedding Destination Club Membership
             for the first time in Chh. Sambhajinagar by Gadiya Group</h1>
           <p className='font-poppins font-light text-[15px] text-justify text-black'>Gadiya Group is in the real estate sector since 1990. Hundreds of housing projects have been successfully completed & handed over to thousands of people in the last 31 years. Our scope of work extends from Aurangabad to Mumbai. Our proposed dream project is for middle-class families, a complete new concept, &quot;Mangalam Wedding Destination Club&quot;. We are setting up the first Mangalam Wedding Destination Club in Marathwada. It is a Grand Royal project spread around 16 acres in a scenic environment at Mauje Puri, Gangapur Taluka. There is a properly constructed paved tar road from Doregaon to Destination Club, and it is just 3 km away from the Aurangabad-Pune Highway.</p>
 
-        </div>
+        </motion.div>
       </section>
       {/* Introduction Section ends here << */}
 
@@ -50,7 +66,12 @@ const page = () => {
           <p className='font-poppins font-light text-[15px] leading-[22.5px] text-justify text-black '>A destination wedding is a royal wedding ceremony at an idyllic location. These wedding ceremonies are based on a specific concept like Rajwada, Bollywood, Indo-Western, Hawaiian Theme, etc. We have seen in newspapers or on TV channels that big celebrities of the country go abroad and have destination weddings. Many movies, TV series show destination weddings. This has created a craze for destination weddings among the youth of today. The frequency of preference for destination weddings surrounded by historical & tourist places is quite often. Moreover, the innovative food culture of the place is enjoyable. Local arts and crafts can also be explored. Wedding planners and event management are there for help. Therefore, such wedding ceremonies become very beautiful and pleasant as they are organized properly. Such royal wedding ceremonies become an unforgettable moment in life not only for the bride and groom but also for their families.</p>
         </div>
 
-        <div className='mx-auto flex flex-col items-center gap-2 pb-12'>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className='mx-auto flex flex-col items-center gap-2 pb-12'>
           <div className='flex w-[90%] justify-between'>
             <Image src={one} width='auto' height='auto' alt='one' />
             <Image src={two} width='auto' height='auto' alt='two' />
@@ -72,10 +93,12 @@ const page = () => {
             <Image src={eleven} width='auto' height='auto' alt='eleven' />
             <Image src={twelve} width='auto' height='auto' alt='twelve' />
           </div>
-        </div>
+        </motion.div
+
+        >
       </section>
       {/* information section ends here << */}
-    </main>
+    </motion.main>
   )
 }
 
