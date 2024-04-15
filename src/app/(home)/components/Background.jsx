@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import homebg1 from '@/public/home/homebg1.png'
+import homebg1 from '@/public/home/Homebg1.png'
 import homebg2 from '@/public/home/homebg_2.png'
 import homebg3 from '@/public/home/homebg_3.png'
 import homebg4 from '@/public/home/homebg_4.png'
